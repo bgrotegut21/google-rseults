@@ -1,0 +1,97 @@
+header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background: blue;
+    padding-top:20px;
+    padding-bottom:30px;
+
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: :border-box;
+
+}
+
+.logo {
+    flex-basis: 120px;
+    height: 45px;
+
+    padding-right:40px;
+    background:green;
+}
+
+
+.textbox {
+    margin-left: 10px;
+}
+
+.text {
+    font-size: medium;
+    border: none;
+}
+
+.text:focus {
+    outline: 0;
+}
+
+
+.searchbox {
+    background:white;
+    display:flex;
+    padding:25px;
+    padding:10px;
+    border-radius: 25px;
+    justify-content: flex-end;
+    border: 1.5px solid rgb(220, 220, 220);
+    box-shadow: 1px 2px 4px rgb(202, 200, 200);
+    flex-basis: 40%;
+
+}
+
+.searchbox:hover {
+    box-shadow: 1px 3px 6px rgb(202, 200, 200);
+}
+
+
+
+.crossed-out{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 4px;
+}
+
+
+.vertical-line {
+    border-left: 1.5px solid rgb(220, 220, 220);
+
+}
+.mic {
+    margin-right: 22px;
+    margin-left: 10px;
+}
+
+.profile-menu{
+    background:blue;
+    display:flex;
+    flex-basis: 100px;
+    justify-content: space-around;
+    margin-right:15px;
+    padding-left: 100px;
+
+}
+
+.menu {
+    margin-top: 10px;
+    padding:2px
+}
+
+.search-icon {
+    filter: invert(0.4) sepia(1) saturate(5) hue-rotate(185deg)
+
+}
