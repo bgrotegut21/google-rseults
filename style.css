@@ -1,20 +1,10 @@
-header {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    background: blue;
-    padding-top:20px;
-    padding-bottom:30px;
 
-
-
-}
 
 body {
     margin: 0;
     padding: 0;
     border:0;
-    box-sizing: :border-box;
+    box-sizing: border-box;
 
 }
 
@@ -22,10 +12,27 @@ body {
     flex-basis: 120px;
     height: 45px;
 
-    padding-right:40px;
-    background:green;
+    padding-right:20px;
+  
+
+
 }
 
+header {
+    display:flex;
+    flex-direction:row;
+    background: white;
+    padding-top:20px;
+    padding-bottom:30px;
+    
+
+
+
+
+}
+ nav {
+     display:flex;
+ }
 
 .textbox {
     margin-left: 10px;
@@ -44,15 +51,23 @@ body {
 .searchbox {
     background:white;
     display:flex;
-    padding:25px;
     padding:10px;
     border-radius: 25px;
     justify-content: flex-end;
     border: 1.5px solid rgb(220, 220, 220);
     box-shadow: 1px 2px 4px rgb(202, 200, 200);
-    flex-basis: 40%;
+    width:700px;
+
+
+
 
 }
+
+.searchbox {
+    position:sticky;
+}
+
+
 
 .searchbox:hover {
     box-shadow: 1px 3px 6px rgb(202, 200, 200);
@@ -77,21 +92,108 @@ body {
 }
 
 .profile-menu{
-    background:blue;
     display:flex;
-    flex-basis: 100px;
+    flex-basis: 130px;
     justify-content: space-around;
-    margin-right:15px;
-    padding-left: 100px;
+    margin-right: 10px;
+
+
+
+}
+.menu-space {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
 
 }
 
 .menu {
-    margin-top: 10px;
-    padding:2px
+    width:40px;
+    height:40px;
+    
+
+
+}
+
+.menu:hover {
+    background:rgb(222, 222, 222);
+    border-radius:50%;
+
+}
+
+.profile:hover {
+    background: rgb(222, 222, 222);
+    border-radius: 50%;
+}
+
+.profile {
+    width:46px;
+    height:40px;
+    padding-bottom: 3px;
+    padding-top:3px;
+
+}
+
+
+
+.menu {
+    padding-bottom:5px;
+    padding-right:3px;
+    padding-left:3px;
+}
+
+
+.menu-img {
+    margin-top: 13px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+
+.profile-img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 
 .search-icon {
     filter: invert(0.4) sepia(1) saturate(5) hue-rotate(185deg)
 
 }
+
+nav {
+    display:flex;
+    background:pink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+}
+
+.All, .News, .Videos, .maps, .shopping, .more {
+    display:flex;
+    flex-direction: row;
+    margin-right:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    color:grey;
+
+
+
+}
+
+.All img, .News img, .Videos img ,.maps img, .shopping img, .more img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:17px;
+    margin-right:4px;
+
+
+    
+}
+
+
