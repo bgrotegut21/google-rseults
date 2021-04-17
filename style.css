@@ -8,6 +8,7 @@ body {
 
 }
 
+/* BEGINING OF HEADER */
 .logo {
     flex-basis: 120px;
     height: 45px;
@@ -23,7 +24,7 @@ header {
     flex-direction:row;
     background: white;
     padding-top:20px;
-    padding-bottom:30px;
+    padding-bottom:16px;
     
 
 
@@ -32,6 +33,7 @@ header {
 }
  nav {
      display:flex;
+     justify-content: center;
  }
 
 .textbox {
@@ -160,23 +162,29 @@ header {
    
 }
 
+
+
 .search-icon {
     filter: invert(0.4) sepia(1) saturate(5) hue-rotate(185deg)
 
 }
 
+/* END OF HEADER AND BEGINING OF NAVIGATION */
+
 nav {
     display:flex;
-    background:pink;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+    justify-content: space-between;
+
+
 
 }
 
 .All, .News, .Videos, .maps, .shopping, .more {
     display:flex;
     flex-direction: row;
-    margin-right:10px;
+    margin-right:15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size:small;
     color:grey;
@@ -184,6 +192,12 @@ nav {
 
 
 }
+.All{
+    color: #2B73E8;
+    border-bottom: 4px #2B73E8 solid;
+
+}
+
 
 .All img, .News img, .Videos img ,.maps img, .shopping img, .more img {
     display:block;
@@ -196,4 +210,44 @@ nav {
     
 }
 
+.setting-tools {
+    display:flex;
+    
+    margin-left:  170px;
 
+    
+    
+
+}
+
+.settings ,.tools {
+    margin-right: 10px;
+    margin-top: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    color:grey;
+}
+
+.safe-search {
+    margin-right:10px;
+    margin-top:17px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+
+}
+
+
+.nav-menu {
+    margin-left: 170px;
+    display:flex;
+
+    
+}
+
+.safe-search {
+    color: grey;
+}
+
+nav {
+    border-bottom:1.5px solid rgb(220, 220, 220) ;
+}
