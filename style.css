@@ -10,13 +10,18 @@ body {
 
 /* BEGINING OF HEADER */
 .logo {
+    position:relative;
+    left:10px;
     flex-basis: 120px;
     height: 45px;
 
     padding-right:20px;
   
 
+}
 
+.logo:hover {
+    cursor: pointer;
 }
 
 header {
@@ -32,6 +37,7 @@ header {
 
 }
  nav {
+     
      display:flex;
      justify-content: center;
  }
@@ -42,7 +48,8 @@ header {
 
 .text {
     font-size: medium;
-    border: none;
+    border:none
+
 }
 
 .text:focus {
@@ -93,6 +100,14 @@ header {
     margin-left: 10px;
 }
 
+.crossed-out:hover{
+    cursor: pointer;
+}
+
+.mic:hover {
+    cursor:pointer
+}
+
 .profile-menu{
     display:flex;
     flex-basis: 130px;
@@ -120,12 +135,14 @@ header {
 .menu:hover {
     background:rgb(222, 222, 222);
     border-radius:50%;
+    cursor:pointer;
 
 }
 
 .profile:hover {
     background: rgb(222, 222, 222);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .profile {
@@ -169,6 +186,10 @@ header {
 
 }
 
+.search-icon:hover {
+    cursor: pointer;
+}
+
 /* END OF HEADER AND BEGINING OF NAVIGATION */
 
 nav {
@@ -191,6 +212,10 @@ nav {
 
 
 
+}
+
+.All:hover, .News:hover, .Videos:hover, .maps:hover, .shopping:hover, .more:hover {
+    cursor: pointer;
 }
 .All{
     color: #2B73E8;
@@ -219,6 +244,7 @@ nav {
     
 
 }
+
 
 .settings ,.tools {
     margin-right: 10px;
@@ -250,4 +276,161 @@ nav {
 
 nav {
     border-bottom:1.5px solid rgb(220, 220, 220) ;
+
+}
+
+.settings:hover {
+    cursor: pointer;
+}
+
+.tools{
+
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top:2px;
+    height:20px;
+
+}
+
+.tools:hover {
+    border: 1.5px solid rgb(202, 200, 200);
+    cursor: pointer;
+}
+
+/* END OF NAVIGATION AND BEGINING OF MAIN */
+
+main {
+    display:grid;
+
+    grid-row-gap:40px;
+ 
+    margin-left: 167px;
+}
+
+
+.sect1{
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    width:600px
+}
+
+.sect1 .elements {
+
+    display:flex;
+    align-items: baseline;
+    height:25px;
+
+    
+
+
+    
+
+}
+
+.sect1 img, .sect1 h4, .sect1 p {
+    margin-right: 5px;
+    
+
+}
+
+.sect1 img:hover, .sect1 h4:hover, .sect1 p:hover {
+    cursor: pointer;
+}
+
+.sect1 h3 {
+    color: #0000EE;
+    height: 10px;
+}
+
+.sect1 h3:hover{
+    
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sect2 {
+
+    width:600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.items {
+    display:flex;
+    align-items: baseline;
+    height:20px;
+}
+
+.sect2 p , .sect1 p {
+    color:rgb(95, 95, 95);
+}
+
+.sect2 h3 {
+    color:#0000EE;
+    height:10px;
+}
+
+.items img {
+    margin-left: 12px;;
+}
+
+.items img:hover{
+    cursor: pointer;
+}
+
+.sect2 h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ask {
+    width:600px;
+}
+
+.ask-for0 {
+    display:flex;
+    align-items: baseline;
+
+}
+
+.ask-for0 img {
+    margin-left: 10px;
+}
+
+.ask-for0 img:hover {
+    cursor: pointer;
+}
+ 
+.ask-for {
+    display:flex;
+    justify-content: space-between;
+    border-top: 1.5px rgb(202, 200, 200) solid;
+}
+.ask-for img {
+    filter: invert(42%) sepia(13%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(19%);
+}
+
+.ask-for:hover {
+    cursor: pointer;
+}
+
+.last-item {
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    top:-20px;
+
+}
+
+
+
+.line {
+    background:rgb(202, 200, 200);
+    width:520px;
+    height:1.5px;
+}
+
+.ask {
+    font-family: Arial, Helvetica, sans-serif;
 }
