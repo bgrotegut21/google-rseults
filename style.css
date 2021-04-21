@@ -593,7 +593,7 @@ main {
 
 .row {
     display:flex;
-    background:violet;
+
     width:750px;
     justify-content: space-between;
 }
@@ -601,9 +601,69 @@ main {
 .button {
     display: flex;
     margin-left: 5px;
-    background:rgb(202, 200, 200);
-    border-radius: 30px;
-    width:350px;
+    background:rgb(220, 220, 220);
+    border-radius: 60px;
+    width:600px;
+    height:60px;
     margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     
+}
+
+.button h4  {
+    position:relative;
+    bottom:5px;
+    margin-left: 40px;
+
+    
+}
+.button img {
+    position:relative;
+    top:20px;
+    left:20px;
+
+}
+
+
+
+.button img {
+    filter: invert(42%) sepia(13%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(19%);
+    
+}
+
+/* END OF SECTIONS BEGINING OF RESULTS */
+
+.bottom-nav {
+    display:flex;
+    flex-direction: column;
+    background:violet;
+    width:750px;
+    margin-left: 167px;
+
+}
+
+.google-image {
+    background:red;
+    display:flex;
+    justify-content: center;
+}
+
+.google-navigation {
+    display: flex;
+    justify-content: center;
+    height:50px;
+}
+
+.google-navigation li {
+    list-style: none;
+    display:flex;
+
+
+}
+
+.google-navigation li ul {
+    background:azure;
+    padding-left: 10px;
+    padding-right:10px;
 }
